@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<table border="1">
+	<!-- <form border="1">
 		<tr>
 			<th>Element</th>
 			<th>ID</th>
@@ -44,7 +44,39 @@
 			<td>min="1",max="100"</td>
 			<td>yes</td>
 		</tr>
-	</table>
+	</form> -->
+
+<h1>Feedback Form</h1>
+  <form name="feedback_form" id="feedback_form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+
+    <label for="portfolio">Portfolio URL:</label>
+    <input type="url" id="portfolio" name="portfolio" required>
+
+    <label for="favColor">Favorite Color:</label>
+    <input type="color" id="favColor" name="favColor">
+
+    <label for="likeness">How much do you like us? (1-100):</label>
+    <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+
+    <br>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+
+
+	
+
+<!-- <form method="post">
+  <label for="Element">Element</label>
+  <input type="text" id="name" minlength="3" maxlength="50" required />
+  <br /><label for="Element">Element</label>
+  <input type="text" id="name" minlength="3" maxlength="50" required />
+</form>
+ -->
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
